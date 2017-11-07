@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "vmName": {
+      "value": null
+    },
+    "osType": {
+      "value": null
+    },
+    "osDiskVhdUri": {
+      "value": null
+    },
+    "dataDisk0VhdUri": {
+      "value": "GEN-DATAVHD-URI",
+    },
+      "vmSize": {
+        "value": null
+      },
+      "existingVirtualNetworkName": {
+        "value": null
+      },
+      "existingVirtualNetworkResourceGroup": {
+        "value": null
+      },
+      "subnetName": {
+        "value": null
+      },
+      "dnsNameForPublicIP": {
+        "value": null
+      }
+    }
+  }
