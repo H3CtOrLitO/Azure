@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "vmName": {
-      "value": "linuxsandboxtest"
+      "value": "linuxsandboxtest2"
     },
     "osType": {
       "value": "Linux"
@@ -12,19 +12,22 @@
       "value": "https://sandboxtestdisks418.blob.core.windows.net/clonedvhds/ubuntusand120171103163517.vhd"
     },
     "dataDisk0VhdUri": {
-      "value": "https://sandboxtestdisks418.blob.core.windows.net/clonedvhds/ubuntusand1-20171103-163851.vhd",
+      "value": "https://sandboxtestdisks418.blob.core.windows.net/clonedvhds/ubuntusand1-20171103-163851.vhd"
     },
-      "vmSize": {
-        "value": "Standard_A2"
-      },
-      "existingVirtualNetworkName": {
-        "value": "sandboxtest-vnet"
-      },
-      "existingVirtualNetworkResourceGroup": {
-        "value": "sandboxtest"
-      },
-      "subnetName": {
-        "value": "default"
-      },
-      }
+    "vmSize": {
+      "value": "Standard_A2"
+    },
+    "existingVirtualNetworkName": {
+      "value": "sandboxtest-vnet"
+    },
+    "existingVirtualNetworkResourceGroup": {
+      "value": "sandboxtest"
+    },
+    "subnetName": {
+      "value": "default"
+    },
+    "NetworkSecurityGroupID": {
+      "value": "/subscriptions/cfcb919c-c5a1-4bee-8f4a-5ccaeccc0787/resourceGroups/sandboxtest/providers/Microsoft.Network/networkSecurityGroups/ubuntusand1-nsg"
+    }
+  }
   }

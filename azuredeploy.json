@@ -23,7 +23,7 @@
       "metadata": {
         "description": "Uri of the existing VHD in ARM standard or premium storage"
       }
-      },
+    },
     "dataDisk0VhdUri": {
       "type": "string",
       "metadata": {
@@ -54,7 +54,12 @@
         "description": "Name of the subnet in the virtual network you want to use"
       }
     },
-    
+    "NetworkSecurityGroupID": {
+      "type": "string",
+      "metadata": {
+        "description": "ID of the Network Security Group you want to use"
+      }
+    }
   },
   "variables": {
     "diagStorageAccountName": "[concat(uniquestring(resourceGroup().id), 'specvm')]",
@@ -98,7 +103,10 @@
               }
             }
           }
-        ]
+        ],
+        "networkSecurityGroup": {
+          "id": "[parameters('NetworkSecurityGroupID')]"
+        }
       }
     },
     {
@@ -126,17 +134,17 @@
             },
             "createOption": "Attach"
           },
-        "dataDisks": [
-          {
-            "name": "[concat(parameters('vmName'),'-dataDisk0')]",
-            "lun": 0,
-            "vhd": {
-              "uri": "[parameters('dataDisk0VhdUri')]"
-            },
-            "caching": "ReadOnly",
-            "createOption": "Attach"
-          }
-        ]
+          "dataDisks": [
+            {
+              "name": "[concat(parameters('vmName'),'-dataDisk0')]",
+              "lun": 0,
+              "vhd": {
+                "uri": "[parameters('dataDisk0VhdUri')]"
+              },
+              "caching": "ReadOnly",
+              "createOption": "Attach"
+            }
+          ]
 
         },
         "networkProfile": {
