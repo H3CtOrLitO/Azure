@@ -1,6 +1,6 @@
 # Create a specialized virtual machine in an existing virtual network
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fparatz%2Fvm-specialized-vhd-existing-vnet%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/paratz/vm-specialized-vhd-existing-vnet/master/azuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
